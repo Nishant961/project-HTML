@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  font-style: italic;
+  font-weight: 200;
+  font-variant-ligatures: historical-ligatures;
+  font-variant: small-caps;
+  background-color: #f4f9fc;
+  color: #1b262c;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0f4c75;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #515252;
+}
+.hero {
+  text-align: left;
+  padding: 3rem;
+  background: #d4ecfa;
+  margin: 20px 20px 10px 10px;
+  font: 1em ;
+}
+
+.hero img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+  shape-image-threshold: unset;
+}
+
+
+.section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #0f4c75;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-left: 5px solid #00b7c2;
+  flex: 1 1 calc(50% - 20px);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  flex-direction:column;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #00b7c2;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0f4c75;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f4c75;
+  color: #fff;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    flex-direction: column;
+  }
+
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+}
+    </style>
+  <header>
+    <div class="container">
+      <h1> My Portfolio website</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+   <!-- Hero Section with Image -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </div>
+    </section>
+    <main>
+    <section id="about" class="section">
+    <section class="hero">
+    <img src="nishant.img.jpeg" alt="Profile photo"/>
+    <h2>Hello, I'm NISHANT</h2>
+    <p>Web Developer | Designer | Problem Solver</p>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm  NISHANT
+        a passionate web developer with a strong foundation in both front-end and back-end development. I specialize in creating responsive, user-friendly websites and web applications that are optimized for performance and scalability. With experience in technologies like HTML, CSS, JavaScript, React, Node.js, and databases such as MongoDB and MySQL, I enjoy solving real-world problems through clean, efficient code. I thrive in collaborative environments, always eager to learn and adapt to new technologies and development trends.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+        <a href="#">project 1</a></p>
+          <p>I 'm make a simple project for learning purpose my college timetable.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+           <a href="#">Project 2</a>
+          <p>Another cool project I worked on recently for a billing page </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: Nishantk03458@gmail.com</p>
+    <p>contact no. : +919653539165</p>
+    <p>LinkedIn: <a href="#">Your Profile</a></p>
+    <p>GitHub: <a href="#"> https://github.com/Nishant961/project-HTML</a></p>
+     <p>Instagram: <a href="#">https://www.instagram.com/jatav_ji__hr35?igsh=eGM4bDJ0OWV2ODUy</a></p>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Send Me a Message</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
